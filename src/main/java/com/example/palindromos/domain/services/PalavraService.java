@@ -12,9 +12,9 @@ import com.example.palindromos.adapter.entities.Palavra;
 import com.example.palindromos.domain.ports.PalavraRepositoryPort;
 import com.example.palindromos.domain.ports.PalavraServicePort;
 @Service
-public class PalavraServiceAdapter  implements PalavraServicePort{
+public class PalavraService implements PalavraServicePort{
     private final PalavraRepositoryPort palavraRepositoryPort;
-    public PalavraServiceAdapter(PalavraRepositoryPort palavraRepositoryPort) {
+    public PalavraService(PalavraRepositoryPort palavraRepositoryPort) {
         this.palavraRepositoryPort = palavraRepositoryPort;
     }
     public List<Palavra> saveAll(List<PalavraDTO> palavrasDTO) {
